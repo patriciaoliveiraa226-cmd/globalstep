@@ -1,1 +1,156 @@
-<!doctype html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contactos — GlobalStep</title><link rel="stylesheet" href="style.css"></head><body><header><div class="wrap nav"><a class="brand" href="index.html"><b>GLOBAL<span>STEP</span></b><small>INTERNATIONAL BUSINESS SOLUTIONS</small></a><nav><a href="index.html">Início</a><a href="index.html#servicos">Serviços</a><a href="index.html#sobre">Sobre nós</a><a href="faqs.html">FAQs</a><a href="contactos.html">Contactos</a></nav><a class="btn" href="contactos.html">Fale connosco</a></div></header><main class="page wrap"><label>FALE CONNOSCO</label><h1>Contactos</h1><p class="lead">Estamos disponíveis para esclarecer dúvidas e perceber como podemos apoiar a sua empresa.</p><div class="contact"><div class="box"><p><b>Email</b><br>geral@globalstep.pt</p><p><b>Telefone</b><br>+351 912 345 678</p><p><b>Localização</b><br>Porto, Portugal</p><p><b>Horário</b><br>Segunda a Sexta · 09:00–18:00</p></div><form onsubmit="event.preventDefault();alert('Mensagem enviada — protótipo académico.');"><label>Nome<input required></label><label>Empresa<input></label><label>Email<input type="email" required></label><label>Telefone<input></label><label>Mensagem<textarea required></textarea></label><button class="btn">Enviar mensagem</button></form></div></main><footer><div class="wrap foot"><b>GLOBAL<span>STEP</span></b><span>geral@globalstep.pt · +351 912 345 678 · Porto, Portugal</span></div><small>© 2026 GlobalStep — Protótipo académico.</small></footer></body></html>
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos — GlobalStep</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrap nav">
+            <a href="index.html" class="brand">
+                <b>GLOBAL<span>STEP</span></b>
+                <small>INTERNATIONAL BUSINESS SOLUTIONS</small>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav-menu">
+                <a href="index.html">Início</a>
+                <a href="index.html#servicos">Serviços</a>
+                <a href="index.html#sobre">Sobre nós</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contactos.html">Contactos</a>
+                <a href="contactos.html" class="btn primary">Fale connosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="legal-page">
+        <div class="wrap">
+            <div class="legal-content">
+                <h1>Entre em Contacto</h1>
+                
+                <div class="contact-section">
+                    <div class="contact-info-column">
+                        <h3>Informações de Contacto</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:contato@globalstep.pt">contato@globalstep.pt</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p><a href="tel:+351200000000">[Telefone]</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Porto, Portugal</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🕒</div>
+                            <div>
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sexta: 09:00 - 18:00<br>Sábado e Domingo: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Envie-nos uma Mensagem</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <div>
+                                    <label for="nome">Nome *</label>
+                                    <input type="text" id="nome" name="nome" required>
+                                </div>
+                                <div>
+                                    <label for="empresa">Empresa *</label>
+                                    <input type="text" id="empresa" name="empresa" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div>
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div>
+                                    <label for="telefone">Telefone</label>
+                                    <input type="tel" id="telefone" name="telefone">
+                                </div>
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <label for="assunto">Assunto *</label>
+                                <input type="text" id="assunto" name="assunto" required>
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <label for="mensagem">Mensagem *</label>
+                                <textarea id="mensagem" name="mensagem" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn gold">Enviar Mensagem</button>
+
+                            <div id="form-message" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div>
+                <div class="footer-brand">
+                    <b>GLOBAL<span>STEP</span></b>
+                </div>
+                <p>International Business Solutions</p>
+                <p>Apoiando PME portuguesas na internacionalização desde 2024.</p>
+            </div>
+            <div>
+                <h4>Contactos</h4>
+                <p class="contact-info">
+                    📧 <a href="mailto:contato@globalstep.pt">contato@globalstep.pt</a><br>
+                    📞 <a href="tel:+351200000000">[Telefone]</a><br>
+                    📍 Porto, Portugal
+                </p>
+            </div>
+            <div>
+                <h4>Navegação</h4>
+                <a href="index.html">Início</a>
+                <a href="index.html#servicos">Serviços</a>
+                <a href="index.html#sobre">Sobre nós</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contactos.html">Contactos</a>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <a href="privacidade.html">Política de Privacidade</a>
+                <a href="termos.html">Termos e Condições</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GlobalStep. Todos os direitos reservados. | O próximo passo do seu negócio é o mundo.</p>
+        </div>
+    </footer>
+</body>
+</html>
